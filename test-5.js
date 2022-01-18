@@ -1,39 +1,52 @@
 // Demo : Strings
 
-var sentence = "  Template Literals or template strings is the ability Have multi-line strings without any funny business. ";
+var sentence = " Template Literals or template strings is the ability Have multi-line strings without any funny business. ";
 
-var url = "https://falovic.com/ Falovic Web Design x y z";
+var url = "http://falovic.com/xxxBize Ulaşın";
 
 // cümle kaç karakterlidir ?
 
-val = sentence.length;
+console.log(sentence.length);
 
 // kaç kelimeden oluşuyor ?
 
-val = (sentence.trim()).split(" ");
+console.log(sentence.trim().split(" ").length);
 
 // Tüm cümleyi küçük harfe çevirin.
 
-val = sentence.toLowerCase();
+console.log(sentence.toLowerCase());
 
 // Cümlenin başındaki ve sonundaki boşlukları siliniz.
 
-val = sentence.trim();
+console.log(sentence.trim());
 
 // '-' karakterini silin.
 
-val = sentence.replace("-","");
+console.log(sentence.replace("-", ""));
 
 // url'nin içinden str kısmını çıkarınız.
 
+var str = "https://"
+console.log(url.substr(str.length));
+console.log(url.slice(str.length));
 
 // url hangi protocol'u kullanmaktadır ? (http,https)
 
+console.log(url.startsWith("http"));
+console.log(url.startsWith("https"));
 
 // url, '.com' ifadesini içeriyor mu?
 
+console.log(url.indexOf(".com")); // .indexOf ifadeyi bulursa index numarasını verir, bulamazsa -1 döndürür.
+console.log(url.includes(".com")); // .includes ifade sorugular ve true/false değeri döndürür.
 
 // url string ifadesini geçerli bir url olarak düzenleyiniz.
 
-// ** val = (sentence.trim()).split(" ");
-console.log(val);
+console.log(url
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/x/g,"")
+    .replace(/ş/g,"s")
+    .replace(/ı/g,"i")
+    .replace("http", "https")
+);
