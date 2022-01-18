@@ -6,18 +6,23 @@ var url = "https://falovic.com/ Falovic Web Design x y z";
 
 // cümle kaç karakterlidir ?
 
+val = sentence.length;
 
 // kaç kelimeden oluşuyor ?
 
+val = (sentence.trim()).split(" ");
 
 // Tüm cümleyi küçük harfe çevirin.
 
+val = sentence.toLowerCase();
 
 // Cümlenin başındaki ve sonundaki boşlukları siliniz.
 
+val = sentence.trim();
 
 // '-' karakterini silin.
 
+val = sentence.replace("-","");
 
 // url'nin içinden str kısmını çıkarınız.
 
@@ -29,3 +34,6 @@ var url = "https://falovic.com/ Falovic Web Design x y z";
 
 
 // url string ifadesini geçerli bir url olarak düzenleyiniz.
+
+// ** val = (sentence.trim()).split(" ");
+console.log(val);
