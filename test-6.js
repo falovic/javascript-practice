@@ -5,10 +5,8 @@
 var car = ["Bmw","Mercedes","Opel","Mazda"]; 
 console.log(car);
 
-/* 
 var car = new Array("Bmw","Mercedes","Opel","Mazda")
 console.log(car);
-*/
 
 // Dizi kaç elemanlıdır ?
 
@@ -23,14 +21,13 @@ console.log(car[car.length - 1]);
 // "Renault" değerini dizinin sonuna ekleyin.
 
 car.push("Renault");
+car[4] = "Renault";
+car[car.lenght] = "Renault";
 
 // "Toyota" değerini dizinin başına ekleyin.
 
+car[0] = "Toyota"
 car.unshift("Toyota");
-
-// "Seat" değerini siliniz.
-
-
 
 // "Toyota" değerini siliniz.
 
@@ -50,6 +47,14 @@ console.log(car);
 
 var nmb = [1,2,5,80];
 console.log(nmb.sort());
+
+function compare (a,b) {
+    if(a>b) return 1;
+    if(a==b) return 0;
+    if(a<b) return -1;
+}
+
+console.log(nmb.sort(compare));
 
 // "Opel" değeri dizinin bir elemanımıdır ?
 
