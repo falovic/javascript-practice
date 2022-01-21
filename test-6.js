@@ -90,3 +90,15 @@ var studentC = ["Kemal", "Gözler", 1998]
 var students = [studentA, studentB, studentC]
 
 console.log(students);
+
+console.log(students[0][0]);
+console.log(students[1][0]);
+console.log(students[2][0]);
+
+console.log(students[0][1]);
+console.log(students[1][1]);
+console.log(students[2][1]);
+
+console.log(students[0][2]);
+console.log(students[1][2]);
+console.log(students[2][2]);
