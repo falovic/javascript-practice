@@ -10,6 +10,8 @@ console.log(car.length);
 
 // Dizinin ilk ve son elemanı nedir ?
 
+
+
 // "Renault" değerini dizinin sonuna ekleyin.
 
 car.push("Renault");
@@ -28,14 +30,27 @@ car.shift();
 
 // Dizi elemanlarını ters çevirin
 
+car.reverse();
+
 // Dizi elemanlarını alfabetik olarak sıralayın.
+
+car.sort();
 
 // [1,2,5,80] dizisini sıralayın.
 
+val = [1,2,5,80];
+console.log(val.sort());
+
 // "Opel" değeri dizinin bir elemanımıdır ?
 
-// var str = "Chevrolet,Dacia";
-// ifadesini diziye çeviriniz.
+console.log(car.includes("Opel"));
+
+// aşağıdaki ifadeyi diziye çeviriniz.
+
+var str = "Chevrolet,Dacia";
+console.log(str.split(","));
+
+
 
 // Oluşturulan 2 dizinin elemanlarını bir başka dizi ile birleştirin.
 
