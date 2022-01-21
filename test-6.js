@@ -2,10 +2,10 @@
 
 // "Bmw,Mercedes,Opel,Mazda" elemanlarına sahip bir dizi oluşturun.
 
-var car = ["Bmw","Mercedes","Opel","Mazda"]; 
+var car = ["Bmw", "Mercedes", "Opel", "Mazda"];
 console.log(car);
 
-var car = new Array("Bmw","Mercedes","Opel","Mazda")
+var car = new Array("Bmw", "Mercedes", "Opel", "Mazda")
 console.log(car);
 
 // Dizi kaç elemanlıdır ?
@@ -45,22 +45,22 @@ console.log(car);
 
 // [1,2,5,80] dizisini sıralayın.
 
-var nmb = [1,2,5,80];
+var nmb = [1, 2, 5, 80];
 console.log(nmb.sort());
 
-function compare (a,b) {
-    if(a>b) return 1;
-    if(a==b) return 0;
-    if(a<b) return -1;
+function compare(a, b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
 }
-
 console.log(nmb.sort(compare));
 
 // "Opel" değeri dizinin bir elemanımıdır ?
 
+console.log(car.indexOf("Opel"));
 console.log(car.includes("Opel"));
 
-// aşağıdaki ifadeyi diziye çeviriniz.
+// Aşağıdaki ifadeyi diziye çeviriniz.
 
 var str = "Chevrolet,Dacia";
 var car2 = str.split(",")
@@ -73,16 +73,20 @@ console.log(car3);
 
 // Oluşturulan diziden son 2 elemanı siliniz.
 
-var car4 = car3.length - 1;
-console.log(car4);
-console.log(car3.splice(6,2));
+console.log(car3.splice(5, 2));
 
-/* Aşağıda verilen elemanları bir dizi içerisinde saklayınız.
-     
+// Aşağıda verilen elemanları bir dizi içerisinde saklayınız.
+
+/*
      studentA : Yiğit Bilgi 2010
-     StudentB : Sena Turan  1999
-     studentC : Ahmet Turan 1998
+     StudentB : Fatih Şahin  1997
+     studentC : Kemal Gözler 1998
 */
 
+var studentA = ["Yiğit", "Bilgi", 2010]
+var studentB = ["Fatih", "Şahin", 1997]
+var studentC = ["Kemal", "Gözler", 1998]
 
+var students = [studentA, studentB, studentC]
 
+console.log(students);
