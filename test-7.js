@@ -9,22 +9,37 @@ Bu bilgilere göre servis uyarısını veriniz.
 
 var trafige_cikis = new Date("04.20.2017");
 var trafikteki_ms = Date.now() - trafige_cikis.getTime();
-var trafikteki_gun = Math.floor(trafikteki_ms/(1000*60*60*24));
+var trafikteki_gun = Math.floor(trafikteki_ms / (1000 * 60 * 60 * 24));
 
-trafige_cikis.setHours(0,0,0,0);
+trafige_cikis.setHours(0, 0, 0, 0);
 
 console.log(trafikteki_ms);
 console.log(trafikteki_gun);
 
-if (trafikteki_gun <=365) {
+if (trafikteki_gun <= 365) {
     console.log("1. servis bakım süreniz geldi.");
-} 
-else if (trafikteki_gun > 365 && trafikteki_gun <= 365*2) {
+} else if (trafikteki_gun > 365 && trafikteki_gun <= 365 * 2) {
     console.log("2. servis bakım süreniz geldi.");
-} 
-else if (trafikteki_gun > 365*2 && trafikteki_gun <= 365*3) {
+} else if (trafikteki_gun > 365 * 2 && trafikteki_gun <= 365 * 3) {
     console.log("3. servis bakım süreniz geldi.");
-}
-else {
+} else {
     console.log("Bilinmeyen süre.");
+}
+
+// Giriş yapmak isteyen kişiye kullanıcı adı ve parola sorgusu yapınız.
+
+var result = prompt("who's there?");
+if (result == "cancel") {
+    console.log("cancelled");
+} else if (result == "admin") {
+    var password = prompt("enter your password:");
+    if (password == "cancel") {
+        console.log("cancelled");
+    } else if (password == "1234") {
+        console.log("welcome admin");
+    } else {
+        console.log("wrong password");
+    }
+} else {
+    console.log("I don\'t know you.");
 }
