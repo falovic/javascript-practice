@@ -20,16 +20,19 @@ while (hak > 0) {
 
     if (sayi == tahmin) {
         console.log(`Tebrikler ${sayac} defada bildiniz.`);
-        alert(`Tebrikler ${sayac} defada bildiniz.`);
+        console.log(`Puanınız: ${100 - (20)*(sayac-1)}`);
+        alert(`Tebrikler ${sayac} defada bildiniz. Puanınız: ${100 - (20)*(sayac-1)}`);
         break;
     } else if (sayi > tahmin) {
         console.log('Yukarı');
+        alert(`Yukarı ( Kalan hakkınız: ${hak} )`);
 
     } else {
         console.log('Aşağı');
-
+        alert(`Aşağı ( Kalan hakkınız: ${hak} )`);
     }
     if (hak == 0) {
-        console.log('Hakkınız bitti.')
+        console.log('Bilemediniz.')
+        alert(`Ahahah bilemediniz. Puanınız: 0`);
     }
 }
